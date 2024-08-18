@@ -1,0 +1,16 @@
+<div class="person-profile">
+  <h1>{{ person?.name }}</h1>
+  <p><strong>Birthdate:</strong> {{ person?.birthdate | date }}</p>
+  <div *ngIf="type === 'actor'">
+    <h2>Movies:</h2>
+    <ul>
+      <li *ngFor="let movie of person.movies">{{ movie.title }}</li>
+    </ul>
+  </div>
+  <div *ngIf="type === 'director'">
+    <h2>Movies Directed:</h2>
+    <ul>
+      <li *ngFor="let movie of person.movies">{{ movie.title }}</li>
+    </ul>
+  </div>
+</div>

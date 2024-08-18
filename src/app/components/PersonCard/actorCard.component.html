@@ -1,0 +1,6 @@
+<div class="movieCard" style="min-height: 10rem;">
+  <h3 *ngIf="actor?.name || director?.name">
+    {{ actor?.name || director?.name }}
+  </h3>  <p *ngIf="!actor?.name && !director?.name">No data available</p>
+
+</div>

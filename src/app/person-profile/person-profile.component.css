@@ -1,0 +1,7 @@
+.person-profile {
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+  background: #f4f4f4;
+  border-radius: 8px;
+}

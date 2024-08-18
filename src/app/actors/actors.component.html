@@ -1,0 +1,11 @@
+<main>
+  <div class="display-container">
+    <div class="movieList">
+      <ul>
+        <li *ngFor="let actor of actors">
+          <personCard [actor]="actor"></personCard>
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>
